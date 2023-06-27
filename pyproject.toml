@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+
+[tool.hatch.build.hooks.vcs]
+version-file = "mgf_strategic_plan/_version.py"
+
+[tool.hatch.version]
+source = "vcs"
+
+[project]
+name = "mgf_strategic_plan"
+description = "The Materials Genome Foundation Strategic Plan"
+dynamic = ["version"]
+
+[tool.doit.commands.list]
+status = true
+subtasks = true
+
+[tool.doit]
+backend = "json"
+verbosity = 2
+process = 2
