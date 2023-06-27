@@ -1,5 +1,9 @@
 # doit tasks
-.doit.db
+.doit.*
+
+# dont track generated files
+mgf_strategic_plan/_version.py
+mgf_strategic_plan/conf.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
