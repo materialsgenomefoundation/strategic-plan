@@ -84,7 +84,7 @@ def task_pdf():
     yield dict(
         name="pdf",
         actions=[
-            F"tectonic -X compile {X.TEX}",
+            F"{X.RUN} tectonic -X compile {X.TEX}",
             F"mv {X.PDF} {X.CWD}"
         ],
         file_dep=[X.TEX],
