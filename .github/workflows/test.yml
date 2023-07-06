@@ -17,10 +17,22 @@ jobs:
     - name: setup python
       uses: actions/setup-python@v4
       with:
-        # cache: pip
-        # cache-dependency-path: pyproject.toml
+        cache: pip
+        cache-dependency-path: pyproject.toml
         python-version: "${{ matrix.python-version}}"
-    - name: build the document
+    - name: install hatch
       run: |
-        python -m pip install --upgrade doit appdirs tomli
-        doit pdf
+        python -m pip install hatch
+    - name: build html
+      run: |
+        hatch run task:html
+    - name: build pdf
+      run: |
+        hatch run task:pdf
+        cp MGF-Strategic-Plan.pdf mgf_strategic_plan/_build/html
+    - name: Deploy main 🚀
+      uses: JamesIves/github-pages-deploy-action@v4
+      if: ${{ github.ref_name == 'main' }}
+      with:
+        folder:  mgf_strategic_plan/_build/html
+        single-commit: true

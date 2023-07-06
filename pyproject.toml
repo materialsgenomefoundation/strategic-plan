@@ -22,3 +22,11 @@ subtasks = true
 backend = "json"
 verbosity = 2
 process = 2
+
+# doit tasks
+[tool.hatch.envs.task.scripts]
+pdf = "doit pdf"
+html = "doit html"
+
+[tool.hatch.envs.task]
+dependencies = ["appdirs", "doit", "tomli"]

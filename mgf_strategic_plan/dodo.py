@@ -39,6 +39,7 @@ class X:
     PDF = DATA / "pdf" / "MGF-Strategic-Plan.pdf"
     HTML = DATA / "html"
     CWD = Path().absolute()
+    SITE = HERE / "html"
 
 def task_env():
     return dict(
@@ -60,10 +61,9 @@ def task_env():
             )
         ],
     )
-def task_pdf():
+def task_configure():
     """build a pdf of the strategic document"""
-    yield dict(
-        name="configure",
+    return dict(
         actions=[do(F"""{X.RUN} jb config sphinx \
                     --config {X.CONFIG.absolute()} \
                     --toc {X.TOC.absolute()} \
@@ -74,6 +74,9 @@ def task_pdf():
         file_dep=[X.TOC, X.CONFIG],
         clean=True
     )
+    
+def task_pdf():
+    """build a pdf of the strategic document"""
     yield dict(
         name="tex",
         actions=[do(F"""{X.RUN} sphinx-build -b latex {HERE} {X.PDF_BUILD}""")],
@@ -89,4 +92,16 @@ def task_pdf():
         ],
         file_dep=[X.TEX],
         targets=[X.CWD / X.PDF.name]
+    )
+
+def task_html():
+    """build a pdf of the strategic document"""
+    return dict(
+        actions=[do(F"""{X.RUN} jb build \
+                    --config {X.CONFIG.absolute()} \
+                    --toc {X.TOC.absolute()} \
+                    {HERE.absolute()}""")],
+        file_dep=[X.CONF],
+        targets=[X.SITE / "index.html"],
+        clean=[(rimraf, [X.SITE])]
     )
