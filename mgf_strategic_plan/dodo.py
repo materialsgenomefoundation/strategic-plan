@@ -1,6 +1,5 @@
 """build tasks"""
 
-from multiprocessing import active_children
 from pathlib import Path
 from shlex import split
 from shutil import rmtree
@@ -36,15 +35,14 @@ class X:
     CONF = HERE / "conf.py"
     RUN = F"conda run --live-stream -p {CONDA}"
     PDF_BUILD = DATA / "pdf"
-    TEX = DATA / "pdf" / "python.tex"
-    PDF = DATA / "pdf" / "python.pdf"
+    TEX = DATA / "pdf" / "MGF-Strategic-Plan.tex"
+    PDF = DATA / "pdf" / "MGF-Strategic-Plan.pdf"
     HTML = DATA / "html"
     CWD = Path().absolute()
+    SITE = HERE / "html"
 
-def task_pdf():
-    """build a pdf of the strategic document"""
-    yield dict(
-        name="env",
+def task_env():
+    return dict(
         actions=[
             do(
                 f"""conda create -y \
@@ -63,18 +61,22 @@ def task_pdf():
             )
         ],
     )
-    yield dict(
-        name="configure",
+def task_configure():
+    """build a pdf of the strategic document"""
+    return dict(
         actions=[do(F"""{X.RUN} jb config sphinx \
                     --config {X.CONFIG.absolute()} \
                     --toc {X.TOC.absolute()} \
                     {HERE.absolute()}""")],
         verbosity=2,
-        task_dep=["pdf:env"],
+        task_dep=["env"],
         targets=[X.CONF],
         file_dep=[X.TOC, X.CONFIG],
         clean=True
     )
+    
+def task_pdf():
+    """build a pdf of the strategic document"""
     yield dict(
         name="tex",
         actions=[do(F"""{X.RUN} sphinx-build -b latex {HERE} {X.PDF_BUILD}""")],
@@ -85,9 +87,21 @@ def task_pdf():
     yield dict(
         name="pdf",
         actions=[
-            F"tectonic -X compile {X.TEX}",
+            F"{X.RUN} tectonic -X compile {X.TEX}",
             F"mv {X.PDF} {X.CWD}"
         ],
         file_dep=[X.TEX],
-        targets=[X.CWD / "python.pdf"]
+        targets=[X.CWD / X.PDF.name]
+    )
+
+def task_html():
+    """build a pdf of the strategic document"""
+    return dict(
+        actions=[do(F"""{X.RUN} jb build \
+                    --config {X.CONFIG.absolute()} \
+                    --toc {X.TOC.absolute()} \
+                    {HERE.absolute()}""")],
+        file_dep=[X.CONF],
+        targets=[X.SITE / "index.html"],
+        clean=[(rimraf, [X.SITE])]
     )

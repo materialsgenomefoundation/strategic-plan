@@ -1,12 +1,8 @@
-# Materials Genome Foundation Strategic Plan
+# About the Materials Genome Foundation Strategic Plan
 
-## MGF Vision
+> start open, stay open.
 
-The Materials Genome Foundation strategic plan is a vision for open materials science community that enriches materials discovery and innovation.​
-
-### Goal 1 - Provide best practices training, support, and infrastructure for the open materials science community.
-
-### Goal 2 - Expand the scope of MGF with new career paths and funding support for a collaborative, information-rich materials design economy.
+The Materials Genome Foundation is openly developing their first [strategic plan]
 
 ## About the Materials Genome Foundation
 
@@ -15,6 +11,7 @@ A nonprofit organization promoting computational approaches in science and engin
 </blockquote>
 
 <!--https://web.archive.org/web/20230329084404/https://materialsgenomefoundation.org/-->
+
 
 ## About this Document
 
@@ -30,3 +27,5 @@ The initial drafting of the living MGF strategic plan in funded by [__Pathways t
 
 [POSE]: https://www.nsf.gov/pubs/2022/nsf22572/nsf22572.htm
 [2229690]: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2229690 "A Path to Sustaining a New Open-Source Ecosystem for Materials Science"
+
+[strategic plan]: #
