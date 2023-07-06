@@ -1,0 +1,26 @@
+on:
+- push
+jobs:
+  pypi:
+    strategy:
+      matrix:
+        python-version:
+        - "3.10"
+    runs-on: ubuntu-latest
+    steps:
+    
+    - name: fetch all history and tags
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - uses: conda-incubator/setup-miniconda@v2
+    - name: setup python
+      uses: actions/setup-python@v4
+      with:
+        # cache: pip
+        # cache-dependency-path: pyproject.toml
+        python-version: "${{ matrix.python-version}}"
+    - name: build the document
+      run: |-
+        python -m pip install --upgrade doit
+        doit pdf
