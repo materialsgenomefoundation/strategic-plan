@@ -10,6 +10,7 @@
 * [REU-TAMU]
 * [Aquatic Germplasm and Genetic Resources Center][AGGRC]
 * [About Pangeo][pangeo]
+* [PhET creates free online interactive educational simulations that benefit STEM literacy worldwide.][Phetsims]
 
 [mdf]: https://materialsdatafacility.org/ "A simple way to publish, discover, and access materials datasets"
 [prisms]: http://www.prisms-center.org
@@ -21,3 +22,4 @@
 [REU-TAMU]: https://oreu.engr.tamu.edu/
 [AGGRC]: https://aggrc.com/
 [pangeo]: https://pangeo.io/about.html
+[phetsims]: https://github.com/phetsims

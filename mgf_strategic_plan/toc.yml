@@ -4,6 +4,7 @@ parts:
 - caption: Preface
   chapters:
   - file: strategic-plan/about.md
+  - file: strategic-plan/motivation.md
 - caption: Goals
   chapters:
   - file: strategic-plan/community/README.md
