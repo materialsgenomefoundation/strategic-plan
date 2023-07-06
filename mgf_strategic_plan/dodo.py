@@ -1,6 +1,5 @@
 """build tasks"""
 
-from multiprocessing import active_children
 from pathlib import Path
 from shlex import split
 from shutil import rmtree

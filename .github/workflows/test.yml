@@ -21,6 +21,6 @@ jobs:
         # cache-dependency-path: pyproject.toml
         python-version: "${{ matrix.python-version}}"
     - name: build the document
-      run: |-
+      run: |
         python -m pip install --upgrade doit appdirs
         doit pdf
