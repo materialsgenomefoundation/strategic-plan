@@ -9,6 +9,7 @@
 * [Materials Research Data Alliance][marda]
 * [REU-TAMU]
 * [Aquatic Germplasm and Genetic Resources Center][AGGRC]
+* [About Pangeo][pangeo]
 
 [mdf]: https://materialsdatafacility.org/ "A simple way to publish, discover, and access materials datasets"
 [prisms]: http://www.prisms-center.org
@@ -19,3 +20,4 @@
 [marda]: https://www.marda-alliance.org/
 [REU-TAMU]: https://oreu.engr.tamu.edu/
 [AGGRC]: https://aggrc.com/
+[pangeo]: https://pangeo.io/about.html

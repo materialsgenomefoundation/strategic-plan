@@ -4,6 +4,7 @@
 # dont track generated files
 mgf_strategic_plan/_version.py
 mgf_strategic_plan/conf.py
+mgf_strategic_plan/_build
 MGF-Strategic-Plan.pdf
 
 # Byte-compiled / optimized / DLL files
