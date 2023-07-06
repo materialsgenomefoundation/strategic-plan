@@ -36,15 +36,13 @@ class X:
     CONF = HERE / "conf.py"
     RUN = F"conda run --live-stream -p {CONDA}"
     PDF_BUILD = DATA / "pdf"
-    TEX = DATA / "pdf" / "python.tex"
-    PDF = DATA / "pdf" / "python.pdf"
+    TEX = DATA / "pdf" / "MGF-Strategic-Plan.tex"
+    PDF = DATA / "pdf" / "MGF-Strategic-Plan.pdf"
     HTML = DATA / "html"
     CWD = Path().absolute()
 
-def task_pdf():
-    """build a pdf of the strategic document"""
-    yield dict(
-        name="env",
+def task_env():
+    return dict(
         actions=[
             do(
                 f"""conda create -y \
@@ -63,6 +61,8 @@ def task_pdf():
             )
         ],
     )
+def task_pdf():
+    """build a pdf of the strategic document"""
     yield dict(
         name="configure",
         actions=[do(F"""{X.RUN} jb config sphinx \
@@ -70,7 +70,7 @@ def task_pdf():
                     --toc {X.TOC.absolute()} \
                     {HERE.absolute()}""")],
         verbosity=2,
-        task_dep=["pdf:env"],
+        task_dep=["env"],
         targets=[X.CONF],
         file_dep=[X.TOC, X.CONFIG],
         clean=True
@@ -89,5 +89,5 @@ def task_pdf():
             F"mv {X.PDF} {X.CWD}"
         ],
         file_dep=[X.TEX],
-        targets=[X.CWD / "python.pdf"]
+        targets=[X.CWD / X.PDF.name]
     )

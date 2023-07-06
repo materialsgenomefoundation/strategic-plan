@@ -1,4 +1,14 @@
 format: jb-book
-root: README.md
-# chapters:
-# - file: README.md
+root: strategic-plan/README.md
+parts:
+- caption: Preface
+  chapters:
+  - file: strategic-plan/about.md
+- caption: Goals
+  chapters:
+  - file: strategic-plan/community/README.md
+  - file: strategic-plan/oss/README.md
+  - file: strategic-plan/events/README.md
+- caption: Appendix
+  chapters:
+  - file: strategic-plan/references.md
