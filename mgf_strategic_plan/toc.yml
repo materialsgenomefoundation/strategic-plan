@@ -9,7 +9,7 @@ parts:
   chapters:
   - file: strategic-plan/community/README.md
   - file: strategic-plan/oss/README.md
-  - file: strategic-plan/events/README.md
+  - file: strategic-plan/services/README.md
 - caption: Appendix
   chapters:
   - file: strategic-plan/references.md
