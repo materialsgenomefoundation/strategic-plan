@@ -1,6 +1,14 @@
 # Open Materials Science Services
 
-A Materials Genome Foundation goal is <q>Establish __services__ that diversify materials science education, training, and collaboration.</q>
+> Establish __services__ that diversify materials science education, training, and collaboration.
+
+
+```{contents} Service objectives
+:depth: 1
+:local:
+:backlinks: none
+```
+
 
 ## Hire Post Doctoral Research Software Engineers
 

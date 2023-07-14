@@ -10,3 +10,6 @@ sphinx:
       - Strategic Plan
       - Materials Genome Foundation
       - report
+    html_theme_options:
+      show_nav_level: 2
+      collapse_navigation: yes

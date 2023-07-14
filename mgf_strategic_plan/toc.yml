@@ -1,11 +1,13 @@
 format: jb-book
 root: strategic-plan/README.md
 parts:
-- caption: Preface
+- caption: Introduction
   chapters:
+  - file: strategic-plan/summary.md
   - file: strategic-plan/about.md
-  - file: strategic-plan/motivation.md
-- caption: Goals
+- caption: MGF Goals
+  numbered: true
+  maxdepth: 2
   chapters:
   - file: strategic-plan/community/README.md
   - file: strategic-plan/oss/README.md

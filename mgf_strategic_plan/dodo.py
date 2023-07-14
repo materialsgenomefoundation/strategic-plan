@@ -39,7 +39,8 @@ class X:
     PDF = DATA / "pdf" / "MGF-Strategic-Plan.pdf"
     HTML = DATA / "html"
     CWD = Path().absolute()
-    SITE = HERE / "html"
+    BUILD = HERE / "_build" / "html"
+    PLANS = BUILD / "strategic-plan"
 
 def task_env():
     return dict(
@@ -88,10 +89,12 @@ def task_pdf():
         name="pdf",
         actions=[
             F"{X.RUN} tectonic -X compile {X.TEX}",
-            F"mv {X.PDF} {X.CWD}"
+            F"cp {X.PDF} {X.PLANS}",
+            F'echo "copied {X.PLANS / X.PDF.name}"'
         ],
         file_dep=[X.TEX],
-        targets=[X.CWD / X.PDF.name]
+        clean=[(rimraf, [X.PDF_BUILD])],
+        targets=[X.BUILD / X.PDF.name]
     )
 
 def task_html():
@@ -102,6 +105,6 @@ def task_html():
                     --toc {X.TOC.absolute()} \
                     {HERE.absolute()}""")],
         file_dep=[X.CONF],
-        targets=[X.SITE / "index.html"],
-        clean=[(rimraf, [X.SITE])]
+        targets=[X.BUILD / "index.html"],
+        clean=[(rimraf, [X.BUILD])]
     )

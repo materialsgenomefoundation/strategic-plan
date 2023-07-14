@@ -15,7 +15,8 @@ A nonprofit organization promoting computational approaches in science and engin
 
 ## About this Document
 
-The Materials Genome Foundation Strategic Plan is open, living document. New visions, goals, and objectives can be adopted as past objectives are met.  Calendar versioning will be used to distribute the strategic plans as software packages containing:
+The Materials Genome Foundation is established to realize a vision for open materials science. 
+The MGF begins their commitment to openness by making their strategic plan an open, living document that can adapt to a rapidly changing technology landscape. New visions, goals, and objectives can be adopted as past objectives are met.  Calendar versioning will be used to distribute the strategic plans as software packages containing:
 
 * The markdown source contents
 * An exported PDF version of the document.
