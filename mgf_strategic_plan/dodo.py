@@ -94,7 +94,7 @@ def task_pdf():
         ],
         file_dep=[X.TEX],
         clean=[(rimraf, [X.PDF_BUILD])],
-        targets=[X.BUILD / X.PDF.name]
+        targets=[X.PLANS / X.PDF.name]
     )
 
 def task_html():
