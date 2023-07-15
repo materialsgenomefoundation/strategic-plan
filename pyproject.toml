@@ -27,6 +27,8 @@ process = 2
 [tool.hatch.envs.task.scripts]
 pdf = "doit pdf"
 html = "doit html"
+clean = "doit clean configure pdf html"
+forget = "doit forget pdf html"
 
 [tool.hatch.envs.task]
 dependencies = ["appdirs", "doit", "tomli"]

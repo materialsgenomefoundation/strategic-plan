@@ -93,7 +93,7 @@ def task_pdf():
             F'echo "copied {X.PLANS / X.PDF.name}"'
         ],
         file_dep=[X.TEX],
-        clean=[(rimraf, [X.PDF_BUILD])],
+        clean=[(rimraf, [X.PDF_BUILD]), F"rm {X.PLANS / X.PDF.name}"],
         targets=[X.PLANS / X.PDF.name]
     )
 

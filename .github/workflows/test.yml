@@ -29,7 +29,6 @@ jobs:
     - name: build pdf
       run: |
         hatch run task:pdf
-        cp MGF-Strategic-Plan.pdf mgf_strategic_plan/_build/html
         touch mgf_strategic_plan/_build/html/.nojekyll
     - name: Deploy main 🚀
       uses: JamesIves/github-pages-deploy-action@v4
