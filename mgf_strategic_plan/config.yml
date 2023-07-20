@@ -2,6 +2,8 @@ title: Materials Genome Foundation Strategic Plan  # The title of the book. Will
 author: The Materials Genome Foundation  # The author of the book
 copyright: "2023"  # Copyright year to be placed in the footer
 logo: _static/logo-128.png
+html:
+  favicon: _static/logo-32.png
 
 sphinx:
   config:
@@ -16,4 +18,3 @@ sphinx:
       collapse_navigation: yes
     html_static_path:
     - _static
-    html_favicon: _static/logo-32.png
