@@ -5,6 +5,7 @@
 mgf_strategic_plan/_version.py
 mgf_strategic_plan/conf.py
 mgf_strategic_plan/_build
+mgf_strategic_plan/_static
 MGF-Strategic-Plan.pdf
 
 # Byte-compiled / optimized / DLL files
