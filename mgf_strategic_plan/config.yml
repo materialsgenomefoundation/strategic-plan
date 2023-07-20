@@ -2,8 +2,6 @@ title: Materials Genome Foundation Strategic Plan  # The title of the book. Will
 author: The Materials Genome Foundation  # The author of the book
 copyright: "2023"  # Copyright year to be placed in the footer
 logo: _static/logo-128.png
-html:
-  favicon: _static/logo-32.png
 
 sphinx:
   config:
@@ -13,8 +11,12 @@ sphinx:
       - Strategic Plan
       - Materials Genome Foundation
       - report
+    html_favicon: _static/logo-32.png
     html_theme_options:
       show_nav_level: 2
       collapse_navigation: yes
+      announcement: |
+        <p>⚠️ The MGF Strategic Plan is in active development. We value all feedback as we devise our first strategic plan.⚠️</p>
+      #  <br>You can help us today by taking our <a href="https://forms.gle/CP1uE1gCTWdNHgyw7">MGF User Survey</a>.
     html_static_path:
     - _static

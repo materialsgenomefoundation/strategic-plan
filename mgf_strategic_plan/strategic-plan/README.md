@@ -1,12 +1,11 @@
 # Materials Genome Foundation Strategic Plan
 
-```{warning}
-The MGF Strategic Plan is in active development. Any feedback or concerns are welcomed.
-```
-
 ```{admonition} MGF Vision
 Advance open innovation in materials science by providing community services that increase access to open materials software, data, and research.
 ```
+
+![](https://private-user-images.githubusercontent.com/4236275/253381516-355e8e50-7a32-4839-b89c-c48a73d31f48.png)
+
 <!--Attaining the bold vision of the MGI now depends on unifying these elements into a broadly accessible
 and tight-knit network. MGI#page=9-->
 
