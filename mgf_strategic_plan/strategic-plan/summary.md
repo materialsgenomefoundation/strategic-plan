@@ -7,7 +7,7 @@ Advance open innovation in materials science by providing community services tha
 The Materials Genome Foundation is established in 2023 - with funding through [__Pathways to Enable Open-Source Ecosystems__ NSF-<abbr title="Pathways to Enable Open-Source Ecosystems">POSE</abbr>][POSE] #[2229690][2229690] - to increase access to materials science and manufacturing literacy.
 Materials science and manufacturing are facing increasingly complex engineering challenges that outpace traditional modes of research and development. Our proposed recourse is to develop and foster diverse, inclusive materials communities practicing open science, a new generation that broadly disseminate materials software, data, models, and research.
 
-![](images/mgf-overview.png "a hand-driven diagram illustrating the goals of the MGF relative to existing efforts like the Materials Genome Initiative")
+![](images/mgf-overview-out.png "a hand-driven diagram illustrating the goals of the MGF relative to existing efforts like the Materials Genome Initiative")
 
 
 ## WIP Below
