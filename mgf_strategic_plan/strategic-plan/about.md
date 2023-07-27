@@ -2,7 +2,7 @@
 
 > start open, stay open.
 
-The Materials Genome Foundation is openly developing their first [strategic plan]
+The Materials Genome Foundation is openly developing their first [strategic plan] to promote open science adoption in materials science and manufacturing.
 
 ## About the Materials Genome Foundation
 

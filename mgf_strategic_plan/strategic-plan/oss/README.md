@@ -1,6 +1,8 @@
 # Advance the quality of open materials science software tools
 
-> Nurture and develop sustainable open source software projects that increase access to quality materials data, theory, and models.
+```{important}
+The MGF will nurture sustainable open source software projects that increase access to quality materials data, theory, and models.
+```
 
 * open-source is a core value of the MGF that will increase access to a materials science identities.
 * the MGF will align materials research with open software goverance to increase the scope of materials science work and those that can participate.
@@ -37,6 +39,7 @@
 * increase access to open standards that manage [supply chain levels for software artifacts][slsa] and [software bill of materials][SBOM] for early research artifacts. 
 * improve quality assurance and supply chain risk management in materials manufacturing
 * most materials science software we remain small in scale with few contributors. SBOM and SLSA
+* there is a frightening speed that materials science desire to develop new materials. SBOM and SLSA provide ways to safe gaurd research supply chains.
 
 [SBOM]: https://www.cisa.gov/sbom
 [SLSA]: https://slsa.dev/
