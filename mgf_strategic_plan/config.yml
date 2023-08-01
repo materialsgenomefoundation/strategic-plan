@@ -17,6 +17,6 @@ sphinx:
       collapse_navigation: yes
       announcement: |
         <p>⚠️ The MGF Strategic Plan is in active development. We value all feedback as we devise our first strategic plan.⚠️</p>
-        <p>You can help us today by taking our <a href="https://forms.gle/CP1uE1gCTWdNHgyw7">MGF Open Science Survey</a>.</p>
+        <p>You can help us today by taking our <a href="https://forms.gle/XgT7ZD4p2yH47i1a7">MGF Open Science Survey</a>.</p>
     html_static_path:
     - _static
