@@ -10,8 +10,14 @@ parts:
   maxdepth: 2
   chapters:
   - file: strategic-plan/community/README.md
+    # train new hosts, remove points of failure
   - file: strategic-plan/oss/README.md
   - file: strategic-plan/services/README.md
-# - caption: Appendix
-#   chapters:
-#   - file: strategic-plan/references.md
+- caption: MGF Initiatives
+  numbered: true
+  maxdepth: 2
+  chapters:
+  - file: strategic-plan/initiatives/community.md
+  - file: strategic-plan/initiatives/oss.md
+  - file: strategic-plan/initiatives/workshops.md
+  - file: strategic-plan/initiatives/textbook.md
