@@ -18,6 +18,13 @@ The MGF will nurture sustainable open source software projects that increase acc
 
 ## Grow a porfolio of endorsed open materials science software projects
 
+Endorsed MGF projects are open source scientific python tools that:[^pyopensci]
+
+* have approved OSI licenses
+* have public documentation
+* have public source code
+* have tests
+
 * MGF endorsed projects
   * have a maintainer
   * have a way to communicate with their community
@@ -48,3 +55,4 @@ The MGF will nurture sustainable open source software projects that increase acc
 [chaoss]: https://chaoss.community/
 
 [^chaoss]: <q cite="https://chaoss.community/about-chaoss/">[CHAOSS] is a [Linux Foundation] project focused on creating metrics, metrics models, and software to better understand open source community health on a global scale.<q>
+[^pyopensci]: this list was adapted from the [pyopensci editor in chief checks](https://www.pyopensci.org/software-peer-review/how-to/editor-in-chief-guide.html#editor-checklist-template)
