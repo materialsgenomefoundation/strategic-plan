@@ -1,4 +1,4 @@
-# About the Materials Genome Foundation Strategic Plan
+# About the strategic plan
 
 > start open, stay open.
 
