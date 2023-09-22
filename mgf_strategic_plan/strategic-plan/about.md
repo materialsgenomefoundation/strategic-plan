@@ -1,8 +1,6 @@
 # About the strategic plan
 
-> start open, stay open.
-
-The Materials Genome Foundation is openly developing their first [strategic plan] to promote open science adoption in materials science and manufacturing.
+This strategic plan is an open living document. Currently, it is a work in progress as we prepare to release a 2024 strategic plan.
 
 ## About the Materials Genome Foundation
 
@@ -15,12 +13,15 @@ A nonprofit organization promoting computational approaches in science and engin
 
 ## About this Document
 
-The Materials Genome Foundation is established to realize a vision for open materials science. 
+An enduring Materials Genome Foundation will remain aware of the needs of the next generation workforce. A sustainable plan can adapt as goals are met or cultural needs in the open materials science ecosystem shift. 
+
 The MGF begins their commitment to openness by making their strategic plan an open, living document that can adapt to a rapidly changing technology landscape. New visions, goals, and objectives can be adopted as past objectives are met.  Calendar versioning will be used to distribute the strategic plans as software packages containing:
 
 * The markdown source contents
 * An exported PDF version of the document.
 * Tooling to build the strategic plan.
+
+More information in the [developer documents](DEVELOPER.md).
 
 ## Acknowledgements
 
